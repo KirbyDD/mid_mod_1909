@@ -14,27 +14,22 @@ class VehicleTest < Minitest::Test
   end
 
   def test_it_has_a_year
-    skip
     assert_equal "2001", @vehicle.year
   end
 
   def test_it_has_a_make
-    skip
     assert_equal "Honda", @vehicle.make
   end
 
   def test_it_has_a_model
-    skip
     assert_equal "Civic", @vehicle.model
   end
 
   def test_start_with_no_passengers
-    skip
     assert_equal [], @vehicle.passengers
   end
 
   def test_add_passengers_method
-    skip
     assert_equal [], @vehicle.passengers
 
     charlie = Passenger.new({"name" => "Charlie", "age" => 18})
@@ -47,7 +42,6 @@ class VehicleTest < Minitest::Test
   end
 
   def test_num_adults_method
-    skip
     assert_equal 0, @vehicle.num_adults
 
     charlie = Passenger.new({"name" => "Charlie", "age" => 18})
@@ -65,12 +59,10 @@ class VehicleTest < Minitest::Test
   end
 
   def test_speeding_question_method
-    skip
     assert_equal false, @vehicle.speeding?
   end
 
   def test_speed_method 
-    skip
     assert_equal false, @vehicle.speeding?
     @vehicle.speed
     assert_equal true, @vehicle.speeding?
